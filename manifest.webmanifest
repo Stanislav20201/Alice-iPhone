@@ -1,0 +1,1 @@
+{"name":"Алиса Free","short_name":"Алиса","description":"Бесплатная локальная PWA с русским голосом, образами и реакциями.","start_url":"./","scope":"./","display":"standalone","background_color":"#0f0c14","theme_color":"#16121d","icons":[{"src":"./icon-192.png","sizes":"192x192","type":"image/png"},{"src":"./icon-512.png","sizes":"512x512","type":"image/png"}]}

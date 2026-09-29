@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+  <meta name="theme-color" content="#16121d" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Алиса Free" />
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="./icon-192.png" />
+  <link rel="stylesheet" href="./styles.css" />
+  <title>Алиса Free</title>
+</head>
+<body class="theme-fireplace">
+  <main class="app-shell">
+    <section class="hero-card">
+      <div id="avatar" class="avatar-wrap idle mood-tender">
+        <div class="halo halo-a"></div><div class="halo halo-b"></div>
+        <img id="avatarImg" class="avatar" src="./fireplace.png" alt="Алиса" />
+        <div class="speaking-bars"><i></i><i></i><i></i><i></i><i></i></div>
+      </div>
+      <div class="eyebrow">ALICE FREE · БЕЗ API И ОПЛАТЫ</div>
+      <h1>Алиса</h1>
+      <p id="status" class="status">Готова поговорить</p>
+      <p class="substatus">Русский голос iPhone, локальные реакции, любимые образы и настройки.</p>
+    </section>
+
+    <section class="card conversation-card">
+      <div class="caption-label">Диалог</div>
+      <div id="caption" class="caption">Нажми «Слушать» или напиши сообщение ниже.</div>
+      <div class="text-row">
+        <input id="textInput" type="text" placeholder="Напиши Алисе…" autocomplete="off" />
+        <button id="sendBtn" class="mini-btn" type="button">Отправить</button>
+      </div>
+    </section>
+
+    <section class="controls">
+      <button id="listenBtn" class="primary-btn" type="button">🎙️ Слушать</button>
+      <button id="stopVoiceBtn" class="secondary-btn" type="button">🔇 Стоп голос</button>
+    </section>
+
+    <section class="card">
+      <div class="card-title">Любимые образы</div>
+      <div class="looks" id="looks">
+        <button class="look-chip active" data-look="fireplace"><img src="./fireplace.png" alt="" /><span>У камина</span></button>
+        <button class="look-chip" data-look="skirt-heels"><img src="./skirt-heels.png" alt="" /><span>Юбка и каблуки</span></button>
+        <button class="look-chip" data-look="cozy-top"><img src="./cozy-top.png" alt="" /><span>Уютный образ</span></button>
+        <button class="look-chip" data-look="smile"><img src="./smile.png" alt="" /><span>Мягкая улыбка</span></button>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-title">Настроение</div>
+      <div class="seg-row" id="moods">
+        <button class="seg active" data-mood="tender">Нежная</button>
+        <button class="seg" data-mood="playful">Игриво</button>
+        <button class="seg" data-mood="calm">Спокойно</button>
+        <button class="seg" data-mood="dreamy">Мечтательно</button>
+      </div>
+      <div class="card-title second">Атмосфера</div>
+      <div class="seg-row" id="themes">
+        <button class="seg active" data-theme="fireplace">Камин</button>
+        <button class="seg" data-theme="snow">Снег</button>
+        <button class="seg" data-theme="bedroom">Комната</button>
+        <button class="seg" data-theme="night">Ночь</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-title">Личные настройки</div>
+      <label>Как Алиса тебя называет<input id="nickname" type="text" placeholder="например: котёнок" /></label>
+      <label>Своя фраза/пожелание<textarea id="memory" rows="3" placeholder="например: говори коротко, мягко и иногда мурчи"></textarea></label>
+      <label class="check-row"><input id="autoMurmur" type="checkbox" checked /> Иногда мурчать после ответа</label>
+      <button id="saveBtn" class="secondary-btn full" type="button">Сохранить</button>
+    </section>
+
+    <section class="install-tip"><strong>На iPhone:</strong> Safari → Поделиться → На экран «Домой».</section>
+  </main>
+  <script src="./app.js" defer></script>
+</body>
+</html>
